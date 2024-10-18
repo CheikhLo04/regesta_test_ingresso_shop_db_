@@ -96,6 +96,9 @@ Testa le funzionalità ordinando articoli e verificando i fornitori e i tempi di
 Controlla i log degli errori in /Applications/MAMP/logs se riscontri problemi.
 
 
+## demo video
+https://drive.google.com/file/d/1bM_U-IUH2lgjEUdEq6HiROT-4N9ebGWr/view?usp=share_link
+
 ## Built With
 
 - [![PHP][PHP-badge]][PHP-url]
