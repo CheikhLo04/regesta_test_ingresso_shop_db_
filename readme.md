@@ -54,8 +54,6 @@ NB: si presume questo database gestisce solo le transazione di acquisti di artic
 
 </details>
 
-<details close>
-<summary>
 
 ### Implementazione
   
@@ -72,13 +70,6 @@ Calcolo Totale e Scelta del Fornitore:
 Il sistema calcola il costo totale e suggerisce il fornitore più economico, mostrando anche i tempi di spedizione per permettere una scelta ottimale.
 
 
-</summary> 
-<br>
-</details>
-
-<details close>
-<summary>
-  
 ### Scelte tecniche e architetturali
 
 Database relazionale
@@ -97,9 +88,6 @@ Ho separato la logica di connessione al database in un file Connect.php per gara
 Scelta dei fornitori basata su prezzo e tempi di spedizione
 La logica di calcolo del miglior fornitore è stata pensata per offrire flessibilità. Non mi sono limitato a trovare solo il prezzo più basso, ma ho considerato anche i tempi di spedizione, permettendo all'utente di scegliere tra un fornitore economico e uno più veloce. Questo riflette una necessità reale in contesti di approvvigionamento.
 
-</summary>
-<br>
-</details>
 
 ### Guida per testare il progetto
 
