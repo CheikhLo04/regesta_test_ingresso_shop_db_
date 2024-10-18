@@ -54,9 +54,12 @@ NB: si presume questo database gestisce solo le transazione di acquisti di artic
 
 </details>
 
-
-### Implementazione
+<details close>
+<summary>
   
+### Implementazione
+</summary> 
+<br>
 Connessione al Database:
 Ho creato un file separato per gestire la connessione tra PHP e MySQL, permettendo al sistema di accedere al database per eseguire le operazioni necessarie.
   
@@ -68,10 +71,14 @@ Ho implementato una logica per applicare sconti basati sul totale dell'ordine, q
 
 Calcolo Totale e Scelta del Fornitore:
 Il sistema calcola il costo totale e suggerisce il fornitore più economico, mostrando anche i tempi di spedizione per permettere una scelta ottimale.
+</details>
 
-
+<details close>
+<summary>
+  
 ### Scelte tecniche e architetturali
-
+</summary>
+<br>
 Database relazionale
 Ho scelto di utilizzare un database relazionale poiché permette di gestire in modo efficace le relazioni tra articoli, fornitori e scorte. Grazie all'integrità referenziale garantita dalle chiavi esterne, posso gestire le relazioni N
 tra articoli e fornitori, rendendo il sistema scalabile e facilmente aggiornabile.
@@ -87,6 +94,7 @@ Ho separato la logica di connessione al database in un file Connect.php per gara
 
 Scelta dei fornitori basata su prezzo e tempi di spedizione
 La logica di calcolo del miglior fornitore è stata pensata per offrire flessibilità. Non mi sono limitato a trovare solo il prezzo più basso, ma ho considerato anche i tempi di spedizione, permettendo all'utente di scegliere tra un fornitore economico e uno più veloce. Questo riflette una necessità reale in contesti di approvvigionamento.
+</details>
 
 
 ### Guida per testare il progetto
