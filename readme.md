@@ -56,7 +56,8 @@ NB: si presume questo database gestisce solo le transazione di acquisti di artic
 
 <details close>
 <summary>
-Implementazione
+
+### Implementazione
   
 Connessione al Database:
 Ho creato un file separato per gestire la connessione tra PHP e MySQL, permettendo al sistema di accedere al database per eseguire le operazioni necessarie.
