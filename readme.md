@@ -72,10 +72,33 @@ Calcolo Totale e Scelta del Fornitore:
 Il sistema calcola il costo totale e suggerisce il fornitore più economico, mostrando anche i tempi di spedizione per permettere una scelta ottimale.
 
 
-
 </summary> 
 <br>
+</details>
 
+<details close>
+<summary>
+  
+### Scelte tecniche e architetturali
+
+Database relazionale
+Ho scelto di utilizzare un database relazionale poiché permette di gestire in modo efficace le relazioni tra articoli, fornitori e scorte. Grazie all'integrità referenziale garantita dalle chiavi esterne, posso gestire le relazioni N
+tra articoli e fornitori, rendendo il sistema scalabile e facilmente aggiornabile.
+
+Modellazione delle entità
+Ho deciso di creare tabelle separate per le entità principali come Shop, Good, Supplier e Stock, poiché ciascuna di queste ha attributi specifici e distinti. Ho scelto di non includere informazioni di vendita ai clienti perché la richiesta si concentra esclusivamente sugli acquisti dai fornitori.
+
+Gestione degli sconti con JSON
+Per semplificare la gestione degli sconti variabili (sul totale ordine, sulla quantità e stagionali), ho deciso di memorizzare le informazioni sugli sconti in formato JSON. Questo mi permette di gestire dinamicamente le regole di sconto senza dover cambiare la struttura del database, mantenendo flessibile l'integrazione di nuovi tipi di sconti.
+
+Separazione della connessione al database
+Ho separato la logica di connessione al database in un file Connect.php per garantire la modularità del codice. In questo modo, eventuali modifiche ai parametri di connessione (come hostname o credenziali) possono essere fatte centralmente senza dover modificare altre parti del progetto.
+
+Scelta dei fornitori basata su prezzo e tempi di spedizione
+La logica di calcolo del miglior fornitore è stata pensata per offrire flessibilità. Non mi sono limitato a trovare solo il prezzo più basso, ma ho considerato anche i tempi di spedizione, permettendo all'utente di scegliere tra un fornitore economico e uno più veloce. Questo riflette una necessità reale in contesti di approvvigionamento.
+
+</summary>
+<br>
 </details>
 
 ### Guida per testare il progetto
