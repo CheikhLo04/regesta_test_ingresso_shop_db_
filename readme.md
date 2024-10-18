@@ -57,12 +57,16 @@ NB: si presume questo database gestisce solo le transazione di acquisti di artic
 <details close>
 <summary>
 Implementazione
- Connessione al Database:
+  
+Connessione al Database:
 Ho creato un file separato per gestire la connessione tra PHP e MySQL, permettendo al sistema di accedere al database per eseguire le operazioni necessarie.
+  
 Recupero Fornitori:
 Il sistema ricerca i fornitori che vendono l'articolo selezionato, verificando la disponibilità di stock e recuperando informazioni come prezzo e tempi di spedizione.
+
 Applicazione Sconti:
 Ho implementato una logica per applicare sconti basati sul totale dell'ordine, quantità o periodi stagionali, se disponibili.
+
 Calcolo Totale e Scelta del Fornitore:
 Il sistema calcola il costo totale e suggerisce il fornitore più economico, mostrando anche i tempi di spedizione per permettere una scelta ottimale.
 
