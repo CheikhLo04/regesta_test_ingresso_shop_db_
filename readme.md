@@ -56,8 +56,7 @@ NB: si presume questo database gestisce solo le transazione di acquisti di artic
 
 <details close>
 <summary>
-  
-Implementazione
+  Implementazione
 </summary> 
 <br>
 
@@ -80,8 +79,7 @@ Il sistema calcola il costo totale e suggerisce il fornitore più economico, mos
 
 <details close>
 <summary>
-  
-Scelte tecniche e architetturali
+  Scelte tecniche e architetturali
 </summary>
 <br>
 
